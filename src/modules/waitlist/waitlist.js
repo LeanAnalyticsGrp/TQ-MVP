@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	var WaitlistCtrl = function($scope, $firebase, FIREBASE_URL, restaurant, Restaurant, Guests, SMS, Notification, MetaInformation){
+	var WaitlistCtrl = function($scope,$firebase, FIREBASE_URL, restaurant, Restaurant, Guests, SMS, Notification, MetaInformation){
 		MetaInformation.setTitle('Waitlist for ' + restaurant.obj.restaurantName);
 
 		var self = this;
@@ -47,6 +47,7 @@
 		this.updateWaitTime();
 
 		this.saveParty = function(form, party) {
+			console.log("Inside save2222 !!!!");
 			// Form validation
 			if(!form.$valid) return;
 			form.$setPristine();
@@ -68,6 +69,9 @@
 					console.log("Error adding party", error);
 				});
 			self.party = {size: self.partySizeOptions[1]};
+			console.log("Reloading page!!!");
+			//reload page after saving form data.
+			$scope.reloadPage = function(){window.location.reload();} 
 		};
 
 		this.smsParty = function(party) {

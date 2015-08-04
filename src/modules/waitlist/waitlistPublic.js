@@ -39,6 +39,7 @@
 		this.updateWaitTime();
 
 		this.saveParty = function(form, party) {
+			console.log("Inside save1111 !!!!");
 			if(!form.$valid) return;
 			// RESET FORM
 			form.$setPristine();
