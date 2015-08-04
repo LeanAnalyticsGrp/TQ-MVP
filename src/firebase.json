@@ -1,0 +1,9 @@
+{
+  "firebase": "rndapplication",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
