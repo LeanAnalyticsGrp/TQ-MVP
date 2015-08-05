@@ -10,7 +10,7 @@
 		var restaurantId = restaurant.obj.$id;
 		 this.parties = restaurant.parties;
 		 this.restaurant = restaurant.obj;
-		  this.tempparties = restaurant.parties;
+		  /*this.tempparties = restaurant.parties;
 		  //angular.copy(this.parties,this.tempparties);
 		  
 		 for(var i=0;i<this.tempparties.length;i++){
@@ -22,7 +22,7 @@
 		  this.parties = angular.copy(this.tempparties);
 		  console.log("Test444444 "+angular.toJson(this.parties));
 		 // this.parties = this.tempparties;
-		  //console.log("PARTIESSSSSSSSSSSSSS"+angular.toJson(this.parties));
+		  //console.log("PARTIESSSSSSSSSSSSSS"+angular.toJson(this.parties));*/
 		this.restaurant = restaurant.obj;
 
 		// Options for guest sizes and set 2 as default

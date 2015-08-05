@@ -188,7 +188,6 @@
 	    			return deferred.promise;
 	    		}]
 	    	};
-			 
 
 		 	$stateProvider
 			    .state("home", {

@@ -91,8 +91,8 @@
          <tr>
           <th class="col-md-4">Guest</th>
           <th class="col-md-4">Arrived</th>
-          <!--<th class="col-md-4">Phone</th>
-        --></tr>
+          <!--<th class="col-md-4">Phone</th>-->
+        </tr>
       </thead>
       <tbody>
        <tr class="animate-row" ng-repeat="party in waitlist.parties | orderBy: 'dateCreated'" title="Add your party to the waitlist above">
@@ -117,12 +117,12 @@
               {{::party.dateCreated | date:'shortTime'}}
           </div>
        </td>
-       <td class="col-md-4">
+       <!--<td class="col-md-4">
          <div>
-            <span></span><!--
+            <span class="glyphicon glyphicon-phone"></span>
             <a href="tel:{{party.phone}}">{{::party.phone }}</a>
-          --></div>
-       </td>
+          </div>
+       </td>-->
      </tr>
     </tbody>
    </table>
